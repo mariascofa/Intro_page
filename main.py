@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Steps with commands for creating table "NAMES":
 # 1.source venv/bin/activate
-# 2.sqlite3 names.sqlite
+# 2.sqlite3 names
 # 3.CREATE TABLE NAMES(ID integer primary key autoincrement, Name varchar(200));
 
 @app.route('/show')
