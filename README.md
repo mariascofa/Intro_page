@@ -6,7 +6,7 @@ Web page. There is a form with a name entry field. If name us unique system adds
 ==================
 Flask is a framework for building web applications in the Python programming language using the Werkzeug toolkit and the Jinja2 templating engine.
 
-## Installation
+# Installation
 ==================
 1.sudo virtualenv venv
 2.source venv/bin/activate
@@ -35,7 +35,7 @@ In contrast to many other database management systems, SQLite is not a client–
 in the application (main.py):
 import sqlite3
 
-## Steps with commands for creating table "NAMES":
+# Steps with commands for creating table "NAMES":
 ======================================================
 1.source venv/bin/activate
 2.sqlite3 names
@@ -47,7 +47,7 @@ a lot of space in the database, but if you know that the data in the column will
 not very large for example Name, then you can use varchar
 indicating the maximum column size, in this example 200)
 
-## Detailed analysis of the main page execution:
+# Detailed analysis of the main page execution:
 ======================================================
 
 @app.route('/')
