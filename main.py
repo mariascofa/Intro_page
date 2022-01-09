@@ -50,7 +50,6 @@ def get_title():
         cursor = connection.cursor()
         cursor.execute("SELECT * FROM NAMES WHERE Name = ( ? )", (tittle,))
         result = cursor.fetchall()
-        print(result)
 
         if not result:
             cursor.execute("""INSERT INTO NAMES ( Name ) VALUES ( ? )""", (tittle,))
