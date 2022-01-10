@@ -62,7 +62,7 @@ def get_title():
             
             
         connection = sqlite3.connect("names")Cancel changes
-        *# Connect to database
+         <em># Connect to database
         
         cursor = connection.cursor()
         *# Initialize the cursor to perform operations*
