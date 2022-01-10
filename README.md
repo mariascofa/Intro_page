@@ -62,36 +62,36 @@ def get_title():
             
             
         connection = sqlite3.connect("names")Cancel changes
-         <em> Connect to database </em>
+         <i> Connect to database </i>
         
         cursor = connection.cursor()
-        *# Initialize the cursor to perform operations*
+        # Initialize the cursor to perform operations
         
         cursor.execute("SELECT * FROM NAMES WHERE Name = ( ? )", (tittle,))
-        *# checking if name was alredy in the database. (any SQL commands can be inserted in the execute method)*
+        # checking if name was alredy in the database. (any SQL commands can be inserted in the execute method)
         
         result = cursor.fetchall()
-        *# Next, to retrieve the result of the SELECT command, use the fetchall method*
+        # Next, to retrieve the result of the SELECT command, use the fetchall method
 
         if not result:
-        *# As the name from a form was not in the database, redirecting user to the page with the greetings.* 
+        # As the name from a form was not in the database, redirecting user to the page with the greetings. 
         
             cursor.execute("""INSERT INTO NAMES ( Name ) VALUES ( ? )""", (tittle,))
-            *# Adding new name into the database*
+            # Adding new name into the database*
             
             connection.commit()
-            *#In cases where we create a table, add a record, update a record, delete a record
+            #In cases where we create a table, add a record, update a record, delete a record
             and all other operations that require execution, they must be sent to the database for execution
-            for this we use the commit () method in the connection*
+            for this we use the commit () method in the connection
             
             connection.close()
-            *# Be sure to close the connection*
+            # Be sure to close the connection
             
             response = redirect("/hello")
-            *# Redicecting to the page with the greetings*
+            # Redicecting to the page with the greetings
 
         else:
-        *# Redicecting to the page which reminds user that he has alredy added his name into the database*
+        # Redicecting to the page which reminds user that he has alredy added his name into the database
             connection.commit()
             connection.close()
             response = make_response(
