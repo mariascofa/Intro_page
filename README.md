@@ -44,9 +44,8 @@ indicating the maximum column size, in this example 200)
 
 # Detailed analysis of the main page execution:
 
-
-@app.route('/')
-@app.route('/add', methods=['GET', 'POST'])
+<p> @app.route('/') </p>
+<p> @app.route('/add', methods=['GET', 'POST'])</p>
 def get_title():
     if request.method == 'GET':
     
@@ -62,7 +61,7 @@ def get_title():
             return "Будь ласка, вкажіть ім'я!"
             
             
-        connection = sqlite3.connect("names")
+        connection = sqlite3.connect("names")Cancel changes
         *# Connect to database
         
         cursor = connection.cursor()
