@@ -12,12 +12,12 @@ Flask is a framework for building web applications in the Python programming lan
 <em>in the application (main.py):</em>
 
 from flask import Flask
-app = Flask(__name__)
+app = Flask(_ _name_ _)
 app.run(debug=True, port=5002)
 
 """
 Best server run app.run (debug = True)
-insert into if __name__ == '__main__' conditions:
+insert into if _ _name_ _ == '_ _main_ _' conditions:
 this is necessary so that this file does not start the server
 if you import this file from another python file
 """
