@@ -29,7 +29,7 @@ In contrast to many other database management systems, SQLite is not a client–
 -sudo apt install sqlite3
 
 <em>in the application (main.py):</em>
-import sqlite3
+<p>import sqlite3</p>
 
 # Steps with commands for creating table "NAMES":
 <p>1.source venv/bin/activate</p>
