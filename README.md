@@ -45,7 +45,7 @@ indicating the maximum column size, in this example 200)
 # Detailed analysis of the main page execution:
 
 <p> @app.route('/') </p>
-<p> @app.route('/add', methods=['GET', 'POST'])</p>
+<i> <p> @app.route('/add', methods=['GET', 'POST'])</p></i>
 def get_title():
     if request.method == 'GET':
     
