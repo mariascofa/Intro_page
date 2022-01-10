@@ -9,7 +9,7 @@ Flask is a framework for building web applications in the Python programming lan
 <p>2.source venv/bin/activate</p>
 <p>3.sudo pip3 install Flask</p>
 
-in the application (main.py):
+<em>in the application (main.py):</em>
 
 from flask import Flask
 app = Flask(__name__)
@@ -28,7 +28,7 @@ In contrast to many other database management systems, SQLite is not a client–
 
 -sudo apt install sqlite3
 
-in the application (main.py):
+<em>in the application (main.py):</em>
 import sqlite3
 
 # Steps with commands for creating table "NAMES":
