@@ -49,9 +49,7 @@ indicating the maximum column size, in this example 200)
 <p> def get_title():</p>
 if request.method == 'GET':
     
-    
-    """if the user just opened the page, he sent a get request to the server. 
-    form is needed to get info and send it later through post request"""
+
    
 
         response = make_response(render_template('add.html'))
