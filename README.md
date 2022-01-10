@@ -5,9 +5,9 @@ Web page. There is a form with a name entry field. If name us unique system adds
 Flask is a framework for building web applications in the Python programming language using the Werkzeug toolkit and the Jinja2 templating engine.
 
 # Installation
-1.sudo virtualenv venv
-2.source venv/bin/activate
-3.sudo pip3 install Flask
+<p>1.sudo virtualenv venv</p>
+<p>2.source venv/bin/activate</p>
+<p>3.sudo pip3 install Flask</p>
 
 in the application (main.py):
 
@@ -32,9 +32,9 @@ in the application (main.py):
 import sqlite3
 
 # Steps with commands for creating table "NAMES":
-1.source venv/bin/activate
-2.sqlite3 names
-3.CREATE TABLE NAMES(ID integer primary key autoincrement, Name varchar(200));
+<p>1.source venv/bin/activate</p>
+<p>2.sqlite3 names</p></p>
+<p>3.CREATE TABLE NAMES(ID integer primary key autoincrement, Name varchar(200));</p>
 
 (varchar is a data type similar to text, the only difference is that
 the text takes up about is designed for large volumes of text and takes
